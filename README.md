@@ -12,3 +12,10 @@ This SRP has 5 actions.
 4. Notify IT Team
 5. Get Host Details
 6. Get Host Tasks
+
+# Configuration required at Kaspersky Security Center
+
+Refer the attached Kaspersky Settings.png screenshot
+
+1. Create Isolation Group
+2. 
