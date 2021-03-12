@@ -4,7 +4,7 @@ Developed by Abdul Rahiman Naufal - abdulrahimannaufal@gmail.com
 
 LogRhythm SmartResponse for Kaspersky Security Center
 
-This SRP has 5 actions.
+This SRP has 6 actions.
 
 1. Save Configuration
 2. Isolate Workstation/Server
@@ -15,16 +15,13 @@ This SRP has 5 actions.
 
 # Configuration required at Kaspersky Security Center
 
-Refer the attached Kaspersky Settings.png screenshot
-
-1. Create a Group called Isolation
-2. Create AV policy for server and workstation.
-3. Modify the firewall setting as shown in the attached screenshot.
-4. 
+1. Create a Group called Isolation in Kaspersky SC
+2. Create AV policies for server and workstation.
+3. Modify the firewall setting as shown in the attached screenshot.(Refer the attached "Kaspersky Settings.png" screenshot)
 
 # Configuration required at LogRhythm Side
 
-1. Copy the attached configuration file to c:// (If required I can code to create the file automatically, I had no time during development)
+1. Copy the attached configuration file to c:// (I had no time to code for auto creation of the file during development, let me know if you guys want me to code it)
 2. Import the SmartReponse plugin to LogRhythm using SmartReponse Plugin Manager from LR Console.
 3. In Webconsole's SmartResponse panel, Select "Kaspersky SC" and select "Save configuration" action.
 4. Input Kaspersky API URL (default https://servername:13999) and credential.
