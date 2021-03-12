@@ -27,3 +27,5 @@ This SRP has 6 actions.
 4. Input Kaspersky API URL (default https://servername:13299) and credential.
 5. Also, provide SMTP details, this is required for "Notify IT" action, which is used to send notification to IT Team.
 6. You can also set "Notify IT Team" action to "Malware activity" AIE rule to send notification.
+
+I highly recommend to setup FIM to monitor KasperskyConfigFile.xml as it contains senitive info.
