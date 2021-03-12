@@ -29,3 +29,5 @@ This SRP has 6 actions.
 6. You can also set "Notify IT Team" action to "Malware activity" AIE rule to send notification.
 
 I highly recommend to setup FIM to monitor KasperskyConfigFile.xml as it contains senitive info.
+
+I was unable to upload SRP plugin file (.lpi), you can easly generate them using uploaded files or get it from LogRhythm Community.
