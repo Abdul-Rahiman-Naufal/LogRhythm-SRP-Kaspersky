@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<remv1:Remediation-Plugin xmlns:remv1="RemediationVersion1.xsd" Name="Kaspersky SC" Version="1">
+  <remv1:Action Name="Get Host Info" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="Get_Host_Details.py" Order="1" />
+  <remv1:StringParameter Name="Host" Switch="" Order="2" />
+  </remv1:Action>
+  
+  <remv1:Action Name="Save Configuration" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="Configuration.py" Order="1" />
+  <remv1:StringParameter Name="URL" Switch="" Order="2" />
+   <remv1:StringParameter Name="User" Switch="" Order="3" />
+   <remv1:EncryptedParameter>
+		<remv1:StringParameter Name="Password" Switch="" Order="4" />
+   </remv1:EncryptedParameter>
+   <remv1:StringParameter Name="Mail From" Switch="" Order="5" />
+   <remv1:StringParameter Name="Mail To" Switch="" Order="6" />
+   <remv1:StringParameter Name="SMTP Server" Switch="" Order="7" />
+   <remv1:StringParameter Name="Domain" Switch="" Order="8" />
+  </remv1:Action>
+  
+  <remv1:Action Name="Notify IT Team" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="Notify.py" Order="1" />
+  <remv1:StringParameter Name="Host" Switch="" Order="2" />
+  <remv1:StringParameter Name="Object" Switch="" Order="3" />
+  <remv1:StringParameter Name="Hash" Switch="" Order="4" />
+  </remv1:Action> 
+  
+  <remv1:Action Name="Isolate host" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="Isolation.py" Order="1" />
+  <remv1:StringParameter Name="Host" Switch="" Order="2" />
+  </remv1:Action>
+  
+  <remv1:Action Name="Remove host Isolation" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="Remove_Isolation.py" Order="1" />
+  <remv1:StringParameter Name="Host" Switch="" Order="2" />
+  </remv1:Action>
+  
+  <remv1:Action Name="Get Host Tasks" Command="python">
+  <remv1:ConstantParameter Name="Script" Switch="Get_Host_Tasks.py" Order="1" />
+  <remv1:StringParameter Name="Host" Switch="" Order="2" />
+  </remv1:Action>
+</remv1:Remediation-Plugin>

@@ -1,0 +1,13 @@
+<data>
+
+    <items>
+		<item name="URL"></item>
+        <item name="user"></item>
+        <item name="password">/</item>
+		<item name="from"></item>
+		<item name="to"></item>
+		<item name="SMTP"></item>
+		<item name="Domain"></item>
+    </items>
+
+</data>
